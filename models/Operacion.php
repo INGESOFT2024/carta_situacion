@@ -38,4 +38,10 @@ class Operacion extends ActiveRecord
         return self::fetchArray($sql);
     }
 
+    public static function obtenerOperacionesconQuery()
+    {
+        $sql = "SELECT * FROM operaciones where operacion_situacion = 1";
+        return self::fetchArray($sql);
+    }
+
 }
