@@ -5,7 +5,7 @@ namespace Model;
 class Operacion extends ActiveRecord
 {
     protected static $tabla = 'operaciones';
-    protected static $idTabla = 'operaciones_id';
+    protected static $idTabla = 'operacion_id';
 
     protected static $columnasDB = ['operacion_nombre', 'operacion_descripcion','operacion_dependencia', 'operacion_direccion', 'operacion_ubicacion', 'operacion_cantidad', 'operacion_fecha', 'operacion_situacion'];
 

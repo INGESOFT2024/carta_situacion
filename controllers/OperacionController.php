@@ -103,7 +103,10 @@ class OperacionController
         try {
 
             $operacion = Operacion::find($id);
-           
+            $operacion->sincronizar([
+                 'situacion' => 0
+             ]);
+            $operacion->actualizar();
             $operacion->eliminar();
             http_response_code(200);
             echo json_encode([
@@ -114,9 +117,9 @@ class OperacionController
             http_response_code(500);
             echo json_encode([
                 'codigo' => 0,
-                'mensaje' => 'Error al eliminar operacion',
+                'mensaje' => 'Error al eliminadar operacion',
                 'detalle' => $e->getMessage(),
             ]);
         }
-    }    
+    }
 }

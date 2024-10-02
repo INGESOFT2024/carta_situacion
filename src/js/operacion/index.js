@@ -256,7 +256,7 @@ const eliminar = async (e) => {
             const data = await respuesta.json();
             const { codigo, mensaje, detalle } = data;
             let icon = 'info'
-            if (codigo == 1) {
+            if (codigo === 1) {
                 icon = 'success'
                 formulario.reset();
                 buscar();

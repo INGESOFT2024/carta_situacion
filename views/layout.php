@@ -34,10 +34,7 @@
                         <ul class="dropdown-menu  dropdown-menu-dark "id="dropwdownRevision" style="margin: 0;">
                             <!-- <h6 class="dropdown-header">Información</h6> -->
                             <li>
-                                <a class="dropdown-item nav-link text-white " href="/aplicaciones/nueva"><i class="ms-lg-0 ms-2 bi bi-plus-circle me-2"></i>Subitem</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item nav-link text-white " href="../../nuevoMVC/productos"><i class="ms-lg-0 ms-2 bi bi-plus-circle me-2"></i>Productos</a>
+                                <a class="dropdown-item nav-link text-white " href="/carta_situacion/operaciones"><i class="ms-lg-0 ms-2 bi bi-plus-circle me-2"></i>Añadir Operaciones</a>
                             </li>
                     
                         

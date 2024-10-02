@@ -39,12 +39,12 @@ $dependencias = $dependencia->buscar();
             <input type="text" name="operacion_direccion" id="operacion_direccion" class="form-control" placeholder="Ingresa el nombre de la dependencia" style="border: 1px solid #007bff;">
         </div>
         <div class="mb-3">
-            <label for="operacion_ubicaion" class="form-label">Ingrese la ubicacion de la dependencia</label>
-            <input type="text" name="operacion_ubicaion" id="operacion_ubicaion" class="form-control" placeholder="Coordenadas geográficas (ej. 15.783471, -90.230759)" style="border: 1px solid #007bff;">
+            <label for="operacion_ubicacion" class="form-label">Ingrese la ubicacion de la dependencia</label>
+            <input type="text" name="operacion_ubicacion" id="operacion_ubicacion" class="form-control" placeholder="Coordenadas geográficas (ej. 15.783471, -90.230759)" style="border: 1px solid #007bff;">
         </div>
         <div class="mb-3">
             <label for="operacion_cantidad" class="form-label">Ingrese cantidad de operaciones realizadas</label>
-            <input type="number" name="operacion_cantidad" id="operacion_cantidad" class="form-control" placeholder="Coordenadas geográficas (ej. 15.783471, -90.230759)" style="border: 1px solid #007bff;">
+            <input type="number" name="operacion_cantidad" id="operacion_cantidad" class="form-control" placeholder="Ingrese cantidad de operaciones aqui" style="border: 1px solid #007bff;">
         </div>
         <div class="row mb-3">
             <div class="col">
@@ -73,3 +73,4 @@ $dependencias = $dependencia->buscar();
     </div>
 </div>
 <script src="<?= asset('./build/js/operacion/index.js') ?>"></script>
+<script src="<?= asset('/build/js/funciones.js') ?>"></script>

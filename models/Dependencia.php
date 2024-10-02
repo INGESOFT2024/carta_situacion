@@ -15,7 +15,7 @@ class Dependencia extends ActiveRecord
 
     public function __construct($args = [])
     {
-        $this->dependencia_id = $args['operacion_id'] ?? '';
+        $this->dependencia_id = $args['dependencia_id'] ?? '';
         $this->dependencia_nombre = $args['dependencia_nombre'] ?? '';
         $this->dependencia_situacion = $args['dependencia_situacion'] ?? 1;
     }
@@ -26,7 +26,7 @@ class Dependencia extends ActiveRecord
         return self::fetchArray($sql);
     }
 
-    public static function obtenerOperacionesconQuery()
+    public static function obtenerDependenciasconQuery()
     {
         $sql = "SELECT * FROM dependencias where dependencia_situacion = 1";
         return self::fetchArray($sql);
