@@ -7,7 +7,7 @@ $dependencias = $dependencia->buscar();
 <div class="row justify-content-center">
     <form class="col-lg-5 border rounded shadow p-4" style="background-color: #26252533;" enctype="multipart/form-data" id="formOperacion">
         <h3 class="text-center mb-4" style="font-family: 'Cinzel', serif; text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); font-size: 2.5rem; color: #0056b3;">
-            <b>Registro de Operaciones</b>
+            <p>Registro de Operaciones</p>
         </h3>
         <div class="mb-3">
             <input type="hidden" name="operacion_id" id="operacion_id" class="form-control">
@@ -72,5 +72,5 @@ $dependencias = $dependencia->buscar();
         </table>
     </div>
 </div>
-<script src="<?= asset('./build/js/operacion/index.js') ?>"></script>
+<script src="<?= asset('/build/js/operacion/index.js') ?>"></script>
 <script src="<?= asset('/build/js/funciones.js') ?>"></script>
