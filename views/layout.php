@@ -36,6 +36,9 @@
                             <li>
                                 <a class="dropdown-item nav-link text-white " href="/carta_situacion/operaciones"><i class="ms-lg-0 ms-2 bi bi-plus-circle me-2"></i>Añadir Operaciones</a>
                             </li>
+                            <li>
+                                <a class="dropdown-item nav-link text-white " href="/carta_situacion/mapa"><i class="ms-lg-0 ms-2 bi bi-plus-circle me-2"></i>Mapa Operaciones</a>
+                            </li>
                     
                         
                         </ul>

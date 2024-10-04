@@ -122,4 +122,17 @@ class OperacionController
             ]);
         }
     }
+
+    public static function mapaAPI()
+    {
+        $sql = "SELECT * FROM operaciones WHERE operacion_situacion = 1";
+
+        try {
+            $envios = Operacion::fetchArray($sql);
+            echo json_encode($envios);
+            exit;
+        } catch (Exception $e) {
+            return [];
+        }
+    }
 }
