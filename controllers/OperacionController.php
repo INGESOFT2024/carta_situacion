@@ -15,6 +15,15 @@ class OperacionController
             'operaciones' => $operaciones
         ]);
     }
+
+    public static function index3(Router $router)
+    {
+        $operaciones = Operacion::find(2);
+        $router->render('operaciones/mapa', [
+            'operaciones' => $operaciones
+        ]);
+    }
+    
     
 
     public static function guardarAPI()
