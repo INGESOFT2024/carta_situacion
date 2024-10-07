@@ -43,5 +43,20 @@ class Operacion extends ActiveRecord
         $sql = "SELECT * FROM operaciones where operacion_situacion = 1";
         return self::fetchArray($sql);
     }
-
+//     SELECT 
+//     operacion_id,
+//     operacion_nombre,
+//     operacion_descripcion,
+//     dependencia_nombre,
+//     operacion_direccion,
+//     operacion_ubicacion,
+//     operacion_cantidad,
+//     operacion_fecha,
+//     operacion_situacion
+// FROM 
+//     operaciones
+// JOIN 
+//     dependencias ON operacion_dependencia = dependencia_id
+// WHERE
+//     operacion_situacion = 1
 }
