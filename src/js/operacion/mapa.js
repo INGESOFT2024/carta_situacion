@@ -20,7 +20,7 @@ const markerLayer = L.layerGroup().addTo(map);
 
 const icon = L.icon({
     iconUrl: './images/operacion.png',  
-    iconSize: [35, 35] 
+    iconSize: [30, 30] 
 });
 
 
