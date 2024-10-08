@@ -52,9 +52,9 @@ const cargarOperaciones = async () => {
                     }).openTooltip();
                     marker.bindPopup(` 
                         <b>${operacion.operacion_nombre}</b><br>
-                        Dependencia: ${operacion.operacion_dependencia}<br>
+                        Dependencia: ${operacion.dependencia_nombre}<br>
                         Direccion: ${operacion.operacion_direccion}<br>
-                        Cantidad: ${operacion.operacion_cantidad}<br>
+                        Cantidad Operaciones: ${operacion.operacion_cantidad}<br>
                         Fecha: ${operacion.operacion_fecha}
                     `);
                 } else {

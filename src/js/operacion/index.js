@@ -36,8 +36,8 @@ const datatable = new DataTable('#tablaOperaciones', {
             data: 'operacion_descripcion'
         },
         {
-            title: 'Dependencia',
-            data: 'operacion_dependencia'
+            title: 'Dependencias',
+            data: 'dependencia_nombre'
         },
         {
             title: 'Direccion',

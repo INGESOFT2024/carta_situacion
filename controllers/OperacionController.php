@@ -134,7 +134,21 @@ class OperacionController
 
     public static function mapaAPI()
     {
-        $sql = "SELECT * FROM operaciones WHERE operacion_situacion = 1";
+        $sql = "SELECT 
+                    operacion_id,
+                    operacion_nombre,
+                    operacion_descripcion,
+                    dependencia_nombre,
+                    operacion_direccion,
+                    operacion_ubicacion,
+                    operacion_cantidad,
+                    operacion_fecha
+                FROM 
+                    operaciones
+                JOIN 
+                    dependencias ON operacion_dependencia = dependencia_id
+                WHERE
+                operacion_situacion = 1";
 
         try {
             $envios = Operacion::fetchArray($sql);
